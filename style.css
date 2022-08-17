@@ -26,19 +26,19 @@ table{
     text-align: center;
 }
 .schedule thead{
-    background-color: #4fa862;
+    background-color: #aaaaaa;
 }
 .schedule th{
-    background-color: #4fa862;
+    background-color: #aaaaaa;
 }
 .schedule td, .schedule th{
     padding: 20px;
 }
 
 .schedule tr:nth-child(even){
-    background-color: #a4bdaa;
+    background-color: #dddddd;
 }
 
 .schedule td:hover{
-    background-color: #a4bdaa;
+    background-color: #bebebe;
 }
