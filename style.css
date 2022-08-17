@@ -1,0 +1,44 @@
+body{
+    background-color: #fdfdfd;
+}
+h1{
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    text-align: center;
+    color: #020202;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2{
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    text-align: center;
+    color: #020202;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+table{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.schedule{
+    text-align: center;
+}
+.schedule thead{
+    background-color: #4fa862;
+}
+.schedule th{
+    background-color: #4fa862;
+}
+.schedule td, .schedule th{
+    padding: 20px;
+}
+
+.schedule tr:nth-child(even){
+    background-color: #a4bdaa;
+}
+
+.schedule td:hover{
+    background-color: #a4bdaa;
+}
