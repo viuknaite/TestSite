@@ -23,49 +23,109 @@
     <h2>Кафедра ПОИТ</h2>
 
     <table class="schedule">
-      <thead>
-        <tr>
-          <th rowspan="2"></th>
-          <th rowspan="2">Время</th>
-          <th colspan="2">2 курс</th>
+      <!------------------------------------Table header------------------------------------>
+      <thead class="schedule" id="header">
+        <tr class="schedule">
+          <th class="schedule" id="header" rowspan="2"></th>
+          <th class="schedule" id="header" rowspan="2">Время</th>
+          <th class="schedule" id="header" colspan="2">2 курс</th>
         </tr>
-        <tr>
-          <td>ПОИТ-01</td>
-          <td>ПОИТ-02</td>
+        <!--Departments sub-item-->
+        <tr class="schedule">
+          <td class="schedule" id="department">ПОИТ-01</td>
+          <td class="schedule" id="department">ПОИТ-02</td>
         </tr>
       </thead>
-      <tbody>
-        <tr>
-          <th rowspan="3">Понедельник</th>
-          <td>9:00 – 11:00</td>
-          <td>Базы данных Иванов И.И. 412</td>
-          <td>Компьютерная графика Петров П.П. 414</td>
+      <!------------------------------------Main table info------------------------------------>
+      <tbody class="schedule">
+        <!--------------------------------Monday-------------------------------->
+        <th class="schedule" id="weekday" rowspan="12">Понедельник</th>
+        <!--1st block-->
+        <td class="schedule" id="time" rowspan="4">9:00 – 11:00</td>
+        <tr class="schedule">
+          <td class="schedule-data" id="course">Базы данных</td>
+          <td class="schedule-data" id="course">Компьютерная графика</td>
         </tr>
-        <tr>
-          <td>11:10 – 13:10</td>
-          <td>Компьютерные сети Сидоров С.С. 508</td>
-          <td>Информатика Курочка С.П. 506</td>
+        <tr class="schedule">
+          <td class="schedule-data" id="professor">Иванов И.И.</td>
+          <td class="schedule-data" id="professor">Петров П.П.</td>
         </tr>
-        <tr>
-          <td>13:20 – 14:20</td>
-          <td>Информатика Курочка С.П. 506</td>
-          <td>Компьютерные сети Сидоров С.С. 508</td>
+        <tr class="schedule">
+          <td class="schedule-data" id="room">412</td>
+          <td class="schedule-data" id="room">414</td>
         </tr>
-        <tr>
-          <th rowspan="3">Вторник</th>
-          <td>15:30 – 17:30</td>
-          <td>Алгоритмизация Дмитриев Д.Д. 202</td>
-          <td>Проектирование Сергеенко С.С. 412</td>
+        <!--2nd block-->
+        <td class="schedule" id="time" rowspan="4">11:10 – 13:10</td>
+        <tr class="schedule">
+          <td class="schedule-data" id="course">Компьютерные сети</td>
+          <td class="schedule-data" id="course">Информатика</td>
         </tr>
-        <tr>
-          <td>17:40 – 19:40</td>
-          <td>Проектирование Сергеенко С.С. 412</td>
-          <td>Алгоритмизация Дмитриев Д.Д. 202</td>
+        <tr class="schedule">
+          <td class="schedule-data" id="professor">Сидоров С.С.</td>
+          <td class="schedule-data" id="professor">Курочка С.П.</td>
         </tr>
-        <tr>
-          <td>19:50 – 21:50</td>
-          <td>Компьютерная графика Петров П.П. 414</td>
-          <td>Базы данных Иванов И.И. 412</td>
+        <tr class="schedule">
+          <td class="schedule-data" id="room">508</td>
+          <td class="schedule-data" id="room">506</td>
+        </tr>
+        <!--3rd block-->
+        <td class="schedule" id="time" rowspan="4">13:20 – 14:20</td>
+        <tr class="schedule">
+          <td class="schedule-data" id="course">Информатика</td>
+          <td class="schedule-data" id="course">Компьютерные сети</td>
+        </tr>
+        <tr class="schedule">
+          <td class="schedule-data" id="professor">Курочка С.П.</td>
+          <td class="schedule-data" id="professor">Сидоров С.С.</td>
+        </tr>
+        <tr class="schedule">
+          <td class="schedule-data" id="room">506</td>
+          <td class="schedule-data" id="room">508</td>
+        </tr>
+
+        <!--------------------------------Tuesday-------------------------------->
+        <th class="schedule" id="weekday" rowspan="12">Вторник</th>
+        <!--1st block-->
+        <td class="schedule" id="time" rowspan="4">15:30 – 17:30</td>
+        <tr class="schedule">
+          <td class="schedule-data" id="course">Алгоритмизация</td>
+          <td class="schedule-data" id="course">Проектирование</td>
+        </tr>
+        <tr class="schedule">
+          <td class="schedule-data" id="professor">Дмитриев Д.Д.</td>
+          <td class="schedule-data" id="professor">Сергеенко С.С</td>
+        </tr>
+        <tr class="schedule">
+          <td class="schedule-data" id="room">202</td>
+          <td class="schedule-data" id="room">412</td>
+        </tr>
+        <!--2nd block-->
+        <td class="schedule" id="time" rowspan="4">17:40 – 19:40</td>
+        <tr class="schedule">
+          <td class="schedule-data" id="course">Проектирование</td>
+          <td class="schedule-data" id="course">Алгоритмизация</td>
+        </tr>
+        <tr class="schedule">
+          <td class="schedule-data" id="professor">Сергеенко С.С</td>
+          <td class="schedule-data" id="professor">Дмитриев Д.Д.</td>
+        </tr>
+        <tr class="schedule">
+          <td class="schedule-data" id="room">412</td>
+          <td class="schedule-data" id="room">202</td>
+        </tr>
+        <!--3rd block-->
+        <td class="schedule" id="time" rowspan="4">19:50 – 21:50</td>
+        <tr class="schedule">
+          <td class="schedule-data" id="course">Компьютерная графика</td>
+          <td class="schedule-data" id="course">Базы данных</td>
+        </tr>
+        <tr class="schedule">
+          <td class="schedule-data" id="professor">Петров П.П.</td>
+          <td class="schedule-data" id="professor">Иванов И.И.</td>
+        </tr>
+        <tr class="schedule">
+          <td class="schedule-data" id="room">414</td>
+          <td class="schedule-data" id="room">412</td>
         </tr>
       </tbody>
     </table>
