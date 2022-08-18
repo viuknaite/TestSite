@@ -32,7 +32,9 @@ table{
 }
 #header, #weekday{
     background-color: #96969b;
-    padding: 20px;
+}
+#weekday{
+    
 }
 #department{
     background-color: #84c8cf;
