@@ -3,7 +3,6 @@ body{
     background-size: 100%;
 }
 h1{
-    font-family: 'Lora', serif;
     font-size: 25px;
     color: #020202;
     margin: auto;
@@ -13,19 +12,19 @@ h1{
 .main-content-headers h1{
     text-align: center;
 }
-h2{
-    font-family: 'Lora', serif;
+h3{
     font-size: 22px;
     color: #020202;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.main-content-headers h2{
+.main-content-headers h3{
     text-align: center;
 }
-.courses-main-content-headers h2{
+.courses-main-content h3{
     font-style: italic;
+    margin-left: 50px;
 }
 .main-content{
     opacity: 0;
@@ -89,5 +88,20 @@ a:visited{
 }
 li{
     padding: 5px;
-    
+}
+ol > li {
+    list-style-type: none;
+    counter-increment: item;
+}
+ol > li:before {
+    content: counter(item) ". ";
+    font-weight: bold;
+}
+ol{
+    counter-reset:  item;
+    list-style-type: none;
+}
+p{
+    margin-top: 50px;
+    margin-left: 15px;
 }
